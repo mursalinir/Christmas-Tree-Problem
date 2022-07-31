@@ -11,9 +11,11 @@ int main(){
         cin>>a[i];
     }
     int* maximum = max_element(a, a+n);
+    sort(a, a + n, greater<>());
+    var = a[1];
     for(int i = 0; i<n; i++)
     {
-        if(a[i]<0)
+        if(a[i]!=var)
         {
             a[i] = *maximum;
         }
